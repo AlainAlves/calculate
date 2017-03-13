@@ -6,7 +6,7 @@ conky.config = {
 	default_color = 'f9f9f9',
         draw_shades = false,
 	double_buffer = true,
-	font = 'Cantarell:size=12',
+	font = 'Nimbus Sans L:size=12',
 	gap_x = 10,
 	gap_y = 20,
 	minimum_width = 200,
@@ -20,8 +20,8 @@ conky.config = {
 	use_xft = true,
 }
 conky.text = [[
-${voffset 8}$color${font Cantarell:size=16}${time %a}$font${voffset -8}$alignr${color f9f9f9}${font Cantarell:size=38}${time %e}$font
-$color${voffset -30}$color${font Cantarell:size=18}${time %b}$font${voffset -3} $color${font Cantarell:size=20}${time %Y}$font
+${voffset 9}$color${font Nimbus Sans L:size=14}${time %a}$font${voffset 7}$alignr${color f9f9f9}${font Nimbus Sans L:size=30}${time %e}$font
+$color${voffset -30}$color${font Nimbus Sans L:size=14}${time %b}$font${voffset -3} $color${font Nimbus Sans L:size=14}${time %Y}$font
 ${voffset 10}$alignr$color São Paulo_BR 22°C
 #
 ${voffset 10}${goto 40}${color}CPU$alignr$cpu%
@@ -37,11 +37,9 @@ ${goto 40}$color2${top_mem name 3}$alignr$color${top_mem mem_res 3}
 ${goto 40}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
 #
 ${voffset 10}$alignr${color2}hd ${fs_size /} - ${fs_used /}
-${alignr}${color2}${font Cantarell:size=12}mem $memmax - $mem
-${alignr}${color2}${font Cantarell:size=12}swap $swapmax - $swap
-${image ~/Imagens/777347.jpg -p 2,380 -s 240x210} ${voffset 5}${alignr}${color}
-
-
+${alignr}${color2}${font Nimbus Sans L:size=12}mem $memmax - $mem
+${alignr}${color2}${font Nimbus Sans L:size=12}swap $swapmax - $swap
+${image ~/Imagens/777347.jpg -p 2,398 -s 230x200} ${voffset 5}${alignr}${color}
 
 
 
@@ -52,9 +50,9 @@ ${image ~/Imagens/777347.jpg -p 2,380 -s 240x210} ${voffset 5}${alignr}${color}
 
 ${voffset 10}$alignr${color} Calculate Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
 ${voffset 10}$alignr${execi 1200 whoami}@${nodename}
-${alignr}${color2}${font Cantarell:size=12}uptime ${color}${uptime_short}
-${alignr}${color2}${font Cantarell:size=12}${alignr}kernel ${color}${kernel}
-${alignr}${color2}${font Cantarell:size=12}${alignr}architecture ${color}${machine} 
-${alignr}${color2}${font Cantarell:size=12}${alignr}file system ${color}${fs_type}
-${voffset 10}${alignr}${color} updates currently available ${color f9f9f9}${font Cantarell:bold:size=12}${execpi 10800 checkupdates | wc -l}${font}${color}
+${alignr}${color2}${font Nimbus Sans L:size=12}uptime ${color}${uptime_short}
+${alignr}${color2}${font Nimbus Sans L:size=12}${alignr}kernel ${color}${kernel}
+${alignr}${color2}${font Nimbus Sans L:size=12}${alignr}architecture ${color}${machine} 
+${alignr}${color2}${font Nimbus Sans L:size=12}${alignr}file system ${color}${fs_type}
+${voffset 10}${alignr}${color} updates currently available ${color f9f9f9}${font Nimbus Sans L:bold:size=12}${execpi 10800 checkupdates | wc -l}${font}${color}
 ]]
