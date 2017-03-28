@@ -60,8 +60,8 @@ alias tunnel="ssh -L 5900:localhost:9999 o"
 alias assistance="x11vnc -many -rfbauth ~/.vnc_passwd -xkb"
 alias mic-on="pactl load-module module-loopback"
 alias mic-off="pactl unload-module module-loopback"
-alias divia="/home/alain/.alain/divia-totem-parser/divia-totem-parser.pl -l=89 -a=666 ; /home/alainn/.alain/divia-totem-parser/divia-totem-parser.pl -l=185 -a=1498"
-alias genmanifest="DISTDIR=\"/tmp/alainn-overlay\" ebuild *.ebuild manifest"
+alias divia="/home/alain/.alain/divia-totem-parser/divia-totem-parser.pl -l=89 -a=666 ; /home/alain/.alain/divia-totem-parser/divia-totem-parser.pl -l=185 -a=1498"
+alias genmanifest="DISTDIR=\"/tmp/alain-overlay\" ebuild *.ebuild manifest"
 alias webcam1="mplayer -tv driver=v4l2:gain=1:width=640:height=480:device=/dev/video1:fps=10:outfmt=rgb16 tv://"
 ##### FONCTIONS #####
 ex ()
